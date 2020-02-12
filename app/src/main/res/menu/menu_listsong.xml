@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Play song"
+        android:id="@+id/play"/>
+    <item
+        android:title="Move up"
+        android:id="@+id/moveup"/>
+
+    <item android:title="Move down"
+        android:id="@+id/movedown"/>
+
+    <item android:id="@+id/delete"
+        android:title="Delete song"/>
+</menu>

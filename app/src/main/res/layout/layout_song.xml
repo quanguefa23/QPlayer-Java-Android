@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#33E6E6DC"
+    android:id="@+id/layoutPlayer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_banner"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="4dp">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:id="@+id/small_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/guccigang"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cv_banner"
+        android:text="Gucci Gang"
+        android:textSize="15sp"
+        android:layout_marginTop="6dp"
+        android:textColor="#000"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@+id/cv_banner"
+        android:text="Lil Pump"
+        android:textSize="13sp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:textColor="#E91E63"
+        android:id="@+id/quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/cv_banner"
+        android:text="Lossless"
+        android:textSize="11sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

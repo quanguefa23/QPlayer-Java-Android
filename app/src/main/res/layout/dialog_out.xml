@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="8.5"
+    android:background="@drawable/curve"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.3"
+        android:background="@drawable/curve2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:textColor="#fff"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <TextView
+            android:maxLines="2"
+            android:lines="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Are you sure to exit QMP application?"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2">
+        <Button
+            android:textColor="#ff2f59"
+            android:background="@drawable/cancel_button_custom"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/cancel_button"
+            android:textAllCaps="false"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="Cancel"/>
+
+        <Button
+            android:textColor="#fff"
+            android:background="@drawable/ok_button_custom"
+            android:id="@+id/ok_button"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="false"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="OK"/>
+    </RelativeLayout>
+</LinearLayout>
